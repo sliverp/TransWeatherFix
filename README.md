@@ -13,6 +13,13 @@ Note: This code base is still not complete. The Transweather model can be found 
 ### The original repo is missing files, and the missing parts have been repaired. Now you can train for evaluation normally
 pt:链接：https://pan.baidu.com/s/1KlLfn8G7qsC6b64QuDA9zg?pwd=2b1h 
 
+---
+## Thanks to the contribution of @huang-hz, this is his training weight file, the effect has been significantly improved
+<img src="https://user-images.githubusercontent.com/35068458/220378501-83d23220-8e6e-412f-9a18-f2d3d257aa25.jpg" width="800"/>
+https://pan.baidu.com/s/1yBn1GyOTLAx4oS6-kbk6xw?pwd=18o3
+
+---
+
 ## Introduction
 
 Removing adverse weather conditions like rain, fog, and snow from images is an important problem in many applications. Most methods proposed in the literature have been designed to deal with just removing one type of degradation. Recently, a CNN-based method  using neural architecture search (All-in-One) was proposed  to remove all the weather conditions at once. However, it has a large number of parameters as it uses multiple encoders to cater to each weather removal task and still has scope for improvement in its performance. In this work, we focus on developing an efficient solution for the all adverse weather removal problem. To this end, we propose TransWeather, a transformer-based end-to-end model with just a single encoder and a decoder that can restore an image degraded by any weather condition. Specifically, we utilize a novel transformer encoder using intra-patch transformer blocks to enhance attention inside the patches to effectively remove smaller weather degradations. We also introduce a transformer decoder with learnable weather type embeddings to adjust to the weather degradation at hand. TransWeather achieves significant improvements across multiple test datasets over both All-in-One network as well as methods fine-tuned for specific tasks. 
